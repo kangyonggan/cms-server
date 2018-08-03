@@ -19,12 +19,12 @@
         <plugin type="com.kangyonggan.common.mybatis.LombokPlugin"/>
 
         <!--jdbc driver-->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/cms"
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/cs"
                         userId="root" password="123456"/>
 
         <!--TableName.java-->
-        <javaModelGenerator targetPackage="com.kangyonggan.cms.model"
-                            targetProject="../cms-model/src/main/java">
+        <javaModelGenerator targetPackage="com.kangyonggan.cs.model"
+                            targetProject="../cs-model/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -35,7 +35,7 @@
         </sqlMapGenerator>
 
         <!--TableNameMapper.java-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.kangyonggan.cms.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.kangyonggan.cs.mapper"
                              targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>

@@ -1,13 +1,13 @@
 server:
   port: 8028
   servlet:
-    context-path: /admin
+    context-path: /api
 
 spring:
   profiles:
     active: @env@
   application:
-    name: CMS
+    name: CMS-SERVER
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
@@ -17,7 +17,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
-  type-aliases-package: com.kangyonggan.cms.model
+  type-aliases-package: com.kangyonggan.cs.model
   config-location: classpath:mybatis.xml
 
 mapper:

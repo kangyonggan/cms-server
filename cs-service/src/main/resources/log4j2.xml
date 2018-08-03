@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN" monitorInterval="300">
     <properties>
-        <property name="LOG_HOME">/home/hxzq/data/logs/as</property>
+        <property name="LOG_HOME">/home/hxzq/data/logs/cs</property>
     </properties>
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
@@ -41,7 +41,7 @@
         </Async>
     </Appenders>
     <Loggers>
-        <Logger name="com.kangyonggan.cms.mapper" level="debug" additivity="false">
+        <Logger name="com.kangyonggan.cs.mapper" level="debug" additivity="false">
             <AppenderRef ref="Console"></AppenderRef>
             <AppenderRef ref="AsyncAll"></AppenderRef>
             <AppenderRef ref="AsyncError"></AppenderRef>
