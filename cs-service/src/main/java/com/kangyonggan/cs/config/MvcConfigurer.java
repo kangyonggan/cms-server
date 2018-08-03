@@ -29,8 +29,8 @@ public class MvcConfigurer implements WebMvcConfigurer {
      * 初始化白名单
      */
     private static void initWhiteList() {
-        whiteList.add("/api/login");
-        whiteList.add("/api/logout");
+        whiteList.add("/login");
+        whiteList.add("/logout");
     }
 
     @Override
