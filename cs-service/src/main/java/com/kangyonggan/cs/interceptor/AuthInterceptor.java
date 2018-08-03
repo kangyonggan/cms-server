@@ -2,7 +2,6 @@ package com.kangyonggan.cs.interceptor;
 
 import com.alibaba.fastjson.JSONObject;
 import com.kangyonggan.app.util.Collections3;
-import com.kangyonggan.app.util.SpringUtils;
 import com.kangyonggan.common.Resp;
 import com.kangyonggan.common.Response;
 import com.kangyonggan.cs.annotation.PermissionMenu;
@@ -12,6 +11,7 @@ import com.kangyonggan.cs.service.MenuService;
 import com.kangyonggan.cs.service.RoleService;
 import com.kangyonggan.cs.service.impl.MenuServiceImpl;
 import com.kangyonggan.cs.util.AuthUtil;
+import com.kangyonggan.cs.util.SpringUtils;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
